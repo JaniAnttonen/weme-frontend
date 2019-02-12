@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 const Header = ({ siteTitle }) => (
-  <nav className="bg-teal">
+  <nav className="bg-white">
     <div className="flex flex-wrap items-center justify-between max-w-xl mx-auto p-4 md:p-8">
-      <Link to="/" className="flex items-center no-underline text-white">
+      <Link to="/" className="flex items-center no-underline text-black">
         <svg
           className="fill-current h-8 mr-2 w-8"
           width="54"
@@ -18,7 +18,7 @@ const Header = ({ siteTitle }) => (
         <span className="font-bold text-xl tracking-tight">{siteTitle}</span>
       </Link>
 
-      <button className="block md:hidden border border-white flex items-center px-3 py-2 rounded text-white">
+      <button className="block md:hidden border border-white flex items-center px-3 py-2 rounded text-black">
         <svg
           className="fill-current h-3 w-3"
           viewBox="0 0 20 20"
@@ -33,21 +33,21 @@ const Header = ({ siteTitle }) => (
         <div className="text-sm">
           <Link
             to="/"
-            className="block mt-4 md:inline-block md:mt-0 mr-6 no-underline text-white"
+            className="block mt-4 md:inline-block md:mt-0 mr-6 no-underline text-black"
           >
             Home
           </Link>
 
           <Link
             to="/about"
-            className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
+            className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-black"
           >
             About
           </Link>
 
           <Link
             to="/contact"
-            className="block md:inline-block mt-4 md:mt-0 no-underline text-white"
+            className="block md:inline-block mt-4 md:mt-0 no-underline text-black"
           >
             Contact
           </Link>
