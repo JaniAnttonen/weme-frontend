@@ -43,17 +43,17 @@ let colors = {
   white: '#ffffff',
   'red-darkest': '#3b0d0c',
   'red-darker': '#621b18',
-  'red-dark': '#cc1f1a',
-  red: '#e3342f',
-  'red-light': '#ef5753',
+  'red-dark': '#F11D4B',
+  red: '#FF5B70',
+  'red-light': '#E87288',
   'red-lighter': '#f9acaa',
   'red-lightest': '#fcebea',
 
   'orange-darkest': '#462a16',
   'orange-darker': '#613b1f',
   'orange-dark': '#de751f',
-  orange: '#f6993f',
-  'orange-light': '#faad63',
+  orange: '#FF8A1E',
+  'orange-light': '#FED2A4',
   'orange-lighter': '#fcd9b6',
   'orange-lightest': '#fff5eb',
 
@@ -61,14 +61,14 @@ let colors = {
   'yellow-darker': '#684f1d',
   'yellow-dark': '#f2d024',
   yellow: '#ffed4a',
-  'yellow-light': '#fff382',
+  'yellow-light': '#FAE196',
   'yellow-lighter': '#fff9c2',
   'yellow-lightest': '#fcfbeb',
 
   'green-darkest': '#0f2f21',
   'green-darker': '#1a4731',
   'green-dark': '#1f9d55',
-  green: '#38c172',
+  green: '#7CD69F',
   'green-light': '#51d88a',
   'green-lighter': '#a2f5bf',
   'green-lightest': '#e3fcec',
@@ -85,7 +85,7 @@ let colors = {
   'blue-darker': '#1c3d5a',
   'blue-dark': '#2779bd',
   blue: '#3490dc',
-  'blue-light': '#6cb2eb',
+  'blue-light': '#CAE9FC',
   'blue-lighter': '#bcdefa',
   'blue-lightest': '#eff8ff',
 
@@ -177,30 +177,13 @@ module.exports = {
 
   fonts: {
     sans: [
-      'system-ui',
-      'BlinkMacSystemFont',
-      '-apple-system',
-      'Segoe UI',
-      'Roboto',
-      'Oxygen',
-      'Ubuntu',
-      'Cantarell',
-      'Fira Sans',
-      'Droid Sans',
       'Helvetica Neue',
+      'Helvetica',
       'sans-serif',
     ],
-    serif: [
-      'Constantia',
-      'Lucida Bright',
-      'Lucidabright',
-      'Lucida Serif',
-      'Lucida',
-      'DejaVu Serif',
-      'Bitstream Vera Serif',
-      'Liberation Serif',
-      'Georgia',
-      'serif',
+    heading: [
+      'Avenir-Bold',
+      'Avenir-Regular'
     ],
     mono: [
       'Menlo',
@@ -424,8 +407,8 @@ module.exports = {
   borderRadius: {
     none: '0',
     sm: '.125rem',
-    default: '.25rem',
-    lg: '.5rem',
+    default: '.35rem',
+    lg: '1rem',
     full: '9999px',
   },
 
@@ -556,6 +539,20 @@ module.exports = {
 
   minHeight: {
     '0': '0',
+    '1': '0.25rem',
+    '2': '0.5rem',
+    '3': '0.75rem',
+    '4': '1rem',
+    '5': '1.25rem',
+    '6': '1.5rem',
+    '8': '2rem',
+    '10': '2.5rem',
+    '12': '3rem',
+    '16': '4rem',
+    '24': '6rem',
+    '32': '8rem',
+    '48': '12rem',
+    '64': '16rem',
     hero: '400px',
     full: '100%',
     screen: '100vh',
@@ -645,6 +642,7 @@ module.exports = {
     '20': '5rem',
     '24': '6rem',
     '32': '8rem',
+    'header': '50px'
   },
 
   /*

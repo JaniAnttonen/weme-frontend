@@ -5,7 +5,7 @@ import React from 'react'
 import logo from '../assets/images/logo.png'
 
 const Header = ({ siteTitle }) => (
-  <nav className="bg-white header shadow-md relative w-full">
+  <nav className="bg-white header shadow-md w-full fixed z-30">
     <div className="flex flex-wrap items-center justify-between w-full max-w-xl max-h-full relative p-2 mx-auto">
       <Link to="/" className="logo">
         <img
@@ -28,25 +28,11 @@ const Header = ({ siteTitle }) => (
 
       <div id="nav" className="hidden md:flex md:items-center w-full md:w-auto">
         <div className="text-sm">
-          <Link
-            to="/"
-            className="block mt-4 md:inline-block md:mt-0 mr-6 no-underline text-black"
-          >
-            Home
+        <Link to="/login" className="bg-teal hover:bg-green hover:border-green text-white py-2 px-10 mr-4 border border-teal rounded no-underline">
+          Sign in
           </Link>
-
-          <Link
-            to="/about"
-            className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-black"
-          >
-            About
-          </Link>
-
-          <Link
-            to="/contact"
-            className="block md:inline-block mt-4 md:mt-0 no-underline text-black"
-          >
-            Contact
+          <Link to="/join" className="bg-transparent hover:border-green hover:bg-green hover:text-white py-2 px-10 border border-teal rounded text-teal no-underline">
+          Join
           </Link>
         </div>
       </div>
