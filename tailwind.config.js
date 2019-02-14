@@ -38,17 +38,9 @@ let defaultConfig = require('tailwindcss/defaultConfig')()
 
 let colors = {
   transparent: 'transparent',
-
   black: '#22292f',
-  'grey-darkest': '#3d4852',
-  'grey-darker': '#606f7b',
-  'grey-dark': '#8795a1',
-  grey: '#b8c2cc',
-  'grey-light': '#dae1e7',
-  'grey-lighter': '#f1f5f8',
-  'grey-lightest': '#f8fafc',
+  grey: '#f2f2f2',
   white: '#ffffff',
-
   'red-darkest': '#3b0d0c',
   'red-darker': '#621b18',
   'red-dark': '#cc1f1a',
@@ -84,7 +76,7 @@ let colors = {
   'teal-darkest': '#0d3331',
   'teal-darker': '#20504f',
   'teal-dark': '#38a89d',
-  teal: '#4dc0b5',
+  teal: '#19A4B9',
   'teal-light': '#64d5ca',
   'teal-lighter': '#a0f0ed',
   'teal-lightest': '#e8fffe',
@@ -564,6 +556,7 @@ module.exports = {
 
   minHeight: {
     '0': '0',
+    hero: '400px',
     full: '100%',
     screen: '100vh',
   },
@@ -613,6 +606,9 @@ module.exports = {
   */
 
   maxHeight: {
+    '50vh': '50vh',
+    '60vh': '60vh',
+    '70vh': '70vh',
     full: '100%',
     screen: '100vh',
   },
@@ -739,7 +735,7 @@ module.exports = {
 
   shadows: {
     default: '0 2px 4px 0 rgba(0,0,0,0.10)',
-    md: '0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08)',
+    md: '0 4px 8px 0 rgba(0,0,0,0.05), 0 2px 4px 0 rgba(0,0,0,0.02)',
     lg: '0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08)',
     inner: 'inset 0 2px 4px 0 rgba(0,0,0,0.06)',
     outline: '0 0 0 3px rgba(52,144,220,0.5)',

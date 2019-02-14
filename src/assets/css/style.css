@@ -9,18 +9,18 @@
  *
  * @import "tailwindcss/preflight";
  */
- @tailwind preflight;
+@tailwind preflight;
 
- /**
+/**
   * This injects any component classes registered by plugins.
   *
   * If using `postcss-import`, use this import instead:
   *
   * @import "tailwindcss/components";
   */
- @tailwind components;
- 
- /**
+@tailwind components;
+
+/**
   * Here you would add any of your custom component classes; stuff that you'd
   * want loaded *before* the utilities so that the utilities could still
   * override them.
@@ -35,8 +35,8 @@
   * @import "components/buttons";
   * @import "components/forms";
   */
- 
- /**
+
+/**
   * This injects all of Tailwind's utility classes, generated based on your
   * config file.
   *
@@ -44,9 +44,9 @@
   *
   * @import "tailwindcss/utilities";
   */
- @tailwind utilities;
- 
- /**
+@tailwind utilities;
+
+/**
   * Here you would add any custom utilities you need that don't come out of the
   * box with Tailwind.
   *
@@ -60,3 +60,36 @@
   * @import "utilities/background-patterns";
   * @import "utilities/skew-transforms";
   */
+
+.header {
+  height: 50px;
+}
+
+.header .logo {
+  height: 35px;
+  width: auto;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button, a {
+  transition: .1s background ease-in-out, .1s border-color ease-in-out, .1s color ease-in-out;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+.hero h1 {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 2.5rem;
+  text-transform: uppercase;
+}
