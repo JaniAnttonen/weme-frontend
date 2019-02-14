@@ -1,15 +1,17 @@
 @font-face {
-  font-family: "Avenir-Regular";
+  font-family: 'Avenir-Regular';
   font-style: normal;
   font-weight: normal;
-  src: local("AvenirNext"), url('../fonts/AvenirNextLTPro-Regular.otf') format('otf');
+  src: local('AvenirNext'),
+    url('../fonts/AvenirNextLTPro-Regular.otf') format('otf');
 }
 
 @font-face {
-  font-family: "Avenir-Bold";
+  font-family: 'Avenir-Bold';
   font-style: bold;
   font-weight: bold;
-  src: local("AvenirNext"), url('../fonts/AvenirNextLTPro-Bold.otf') format('otf');
+  src: local('AvenirNext'),
+    url('../fonts/AvenirNextLTPro-Bold.otf') format('otf');
 }
 
 /**
@@ -93,12 +95,16 @@ img {
   box-sizing: border-box;
 }
 
-button, a {
-  transition: .1s background ease-in-out, .1s border-color ease-in-out, .1s color ease-in-out;
+button,
+a {
+  transition: 0.1s background ease-in-out, 0.1s border-color ease-in-out,
+    0.1s color ease-in-out;
 }
 
 p {
   line-height: 1.5em;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 .hero h1 {
@@ -106,4 +112,10 @@ p {
   font-size: 28px;
   line-height: 2.5rem;
   text-transform: uppercase;
+}
+
+h2 {
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 500;
 }

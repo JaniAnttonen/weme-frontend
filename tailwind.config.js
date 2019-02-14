@@ -176,15 +176,8 @@ module.exports = {
   */
 
   fonts: {
-    sans: [
-      'Helvetica Neue',
-      'Helvetica',
-      'sans-serif',
-    ],
-    heading: [
-      'Avenir-Bold',
-      'Avenir-Regular'
-    ],
+    sans: ['Helvetica Neue', 'Helvetica', 'sans-serif'],
+    heading: ['Avenir-Bold', 'Avenir-Regular'],
     mono: [
       'Menlo',
       'Monaco',
@@ -484,6 +477,7 @@ module.exports = {
   height: {
     auto: 'auto',
     px: '1px',
+    '1/2': '50%',
     '1': '0.25rem',
     '2': '0.5rem',
     '3': '0.75rem',
@@ -553,7 +547,9 @@ module.exports = {
     '32': '8rem',
     '48': '12rem',
     '64': '16rem',
+    '128': '32rem',
     hero: '400px',
+    card: '288px',
     full: '100%',
     screen: '100vh',
   },
@@ -642,7 +638,7 @@ module.exports = {
     '20': '5rem',
     '24': '6rem',
     '32': '8rem',
-    'header': '50px'
+    header: '50px',
   },
 
   /*
