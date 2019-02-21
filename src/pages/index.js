@@ -7,6 +7,9 @@ import Hero from '../components/hero'
 
 import { BigCard, SmallCard } from '../components/card'
 
+import calendarImg from '../assets/images/calendar.png'
+import vrImg from '../assets/images/vr-glasses.png'
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
@@ -19,14 +22,14 @@ const IndexPage = () => (
           Finland and China by proving a modular system.
         </p>
       </BigCard>
-      <BigCard color="green">
+      <BigCard color="green" icon={calendarImg}>
         <h2>Personal calendar and events</h2>
         <p>
           We aim to improve the elders living quality and social satisfaction in
           Finland and China by proving a modular system.
         </p>
       </BigCard>
-      <BigCard color="red">
+      <BigCard color="red" icon={vrImg}>
         <h2>VR games</h2>
         <p>
           We aim to improve the elders living quality and social satisfaction in

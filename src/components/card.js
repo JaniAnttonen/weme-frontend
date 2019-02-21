@@ -16,7 +16,7 @@ export const BigCard = props => {
       />
       <div className="pl-10 py-9 pr-10 relative flex flex-col h-full">
         <div className="flex w-full h-1/2 flex-no-shrink">
-          {icon && <img src={icon} alt="big card icon" />}
+          {icon && <img src={icon} className="cardImg" alt="big card icon" />}
         </div>
         <div className="flex w-full h-1/2 flex-no-shrink flex-col">
           {children}
