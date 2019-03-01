@@ -5,7 +5,7 @@ export const BigCard = props => {
   const { color, icon, right, children } = props
   return (
     <div
-      className={`container relative max-w-full w-1/3 mb-8 flex-no-shrink flex-grow bg-white shadow rounded min-h-card${
+      className={`container relative max-w-full md:w-1/3 sd:w-full mb-8 flex-no-shrink flex-grow bg-white shadow rounded min-h-card${
         !right ? ' mr-8' : ''
       }`}
     >
@@ -27,10 +27,10 @@ export const BigCard = props => {
 }
 
 export const SmallCard = props => {
-  const { color, icon, right } = props
+  const { color, icon, right, children } = props
   return (
     <div
-      className={`container relative max-w-1/2 w-1/5 mb-8 flex-no-shrink flex-grow bg-white shadow rounded min-h-48${
+      className={`container relative max-w-1/2 md:w-1/5 sd:w-1/2 mb-8 flex-no-shrink flex-grow bg-white shadow rounded min-h-48${
         !right ? ' mr-8' : ''
       }`}
     >
@@ -39,6 +39,14 @@ export const SmallCard = props => {
           color ? color : 'red'
         } w-2 h-full absolute pin-y pin-x rounded-l`}
       />
+      <div className="pl-10 py-9 pr-10 relative flex flex-col h-full">
+        <div className="flex w-full flex-no-shrink flex-col pt-6">
+          {children}
+        </div>
+        <div className="flex w-full flex-no-shrink">
+          {icon && <img src={icon} className="cardImg" alt="small card icon" />}
+        </div>
+      </div>
     </div>
   )
 }

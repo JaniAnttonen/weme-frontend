@@ -1,5 +1,5 @@
 {
-  "name": "WeMe Project",
+  "name": "weme-frontend",
   "private": true,
   "description": "WeMe Project is a joint project between The University of Turku and Fudan University studying and helping elderly people that are socially isolated.",
   "version": "0.1.0",
@@ -29,11 +29,13 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.js\"",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "devDependencies": {
+    "gh-pages": "^2.0.1",
     "prettier": "^1.15.2"
   },
   "repository": {

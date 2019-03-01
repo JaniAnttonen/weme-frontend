@@ -8,11 +8,7 @@ const Header = ({ siteTitle }) => (
   <nav className="bg-white header shadow-md w-full fixed z-30">
     <div className="flex flex-wrap items-center justify-between w-full max-w-xl max-h-full relative p-2 mx-auto">
       <Link to="/" className="logo">
-        <img
-          src={logo}
-          className="h-full relative"
-          alt="WeMe logo"
-        />
+        <img src={logo} className="h-full relative" alt="WeMe logo" />
       </Link>
 
       <button className="block md:hidden border border-white flex items-center px-3 py-2 rounded text-black">
@@ -28,11 +24,17 @@ const Header = ({ siteTitle }) => (
 
       <div id="nav" className="hidden md:flex md:items-center w-full md:w-auto">
         <div className="text-sm">
-        <Link to="/login" className="bg-teal hover:bg-green hover:border-green text-white py-2 px-10 mr-4 border border-teal rounded no-underline">
-          Sign in
+          <Link
+            to="/app/login"
+            className="bg-teal hover:bg-green hover:border-green text-white py-2 px-10 mr-4 border border-teal rounded no-underline"
+          >
+            Sign in
           </Link>
-          <Link to="/join" className="bg-transparent hover:border-green hover:bg-green hover:text-white py-2 px-10 border border-teal rounded text-teal no-underline">
-          Join
+          <Link
+            to="/app/join"
+            className="bg-transparent hover:border-green hover:bg-green hover:text-white py-2 px-10 border border-teal rounded text-teal no-underline"
+          >
+            Join
           </Link>
         </div>
       </div>

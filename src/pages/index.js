@@ -9,6 +9,8 @@ import { BigCard, SmallCard } from '../components/card'
 
 import calendarImg from '../assets/images/calendar.png'
 import vrImg from '../assets/images/vr-glasses.png'
+import infoImg from '../assets/images/info.png'
+import speechBubbles from '../assets/images/speech-bubble.png'
 
 const IndexPage = () => (
   <Layout>
@@ -45,10 +47,18 @@ const IndexPage = () => (
       </BigCard>
     </div>
     <div className="container mx-auto w-full max-w-xl px-2 flex flex-wrap justify-stretch">
-      <SmallCard color="red-light" />
-      <SmallCard color="blue-light" />
-      <SmallCard color="yellow-light" />
-      <SmallCard color="orange-light" />
+      <SmallCard color="red-light" icon={infoImg}>
+        <h2>ABOUT US</h2>
+      </SmallCard>
+      <SmallCard color="blue-light" icon={speechBubbles}>
+        <h2>CHAT & CALLS</h2>
+      </SmallCard>
+      <SmallCard color="yellow-light">
+        <h2>THE PLAN</h2>
+      </SmallCard>
+      <SmallCard color="orange-light">
+        <h2>THE HEAD</h2>
+      </SmallCard>
     </div>
   </Layout>
 )
