@@ -177,7 +177,7 @@ module.exports = {
 
   fonts: {
     sans: ['Helvetica Neue', 'Helvetica', 'sans-serif'],
-    heading: ['Avenir-Bold', 'Avenir-Regular'],
+    heading: ['Avenir-SemiBold'],
     mono: [
       'Menlo',
       'Monaco',

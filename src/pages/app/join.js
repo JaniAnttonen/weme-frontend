@@ -2,11 +2,14 @@ import React from 'react'
 
 import Layout from '../../components/layout'
 import SEO from '../../components/seo'
+import Main from '../../components/main'
 
 const Join = () => (
   <Layout>
     <SEO title="Sign In" keywords={[`weme`, `Join`]} />
-    <h1>Join!</h1>
+    <Main className="py-8">
+      <h1>Join!</h1>
+    </Main>
   </Layout>
 )
 

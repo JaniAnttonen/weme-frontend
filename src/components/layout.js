@@ -22,11 +22,11 @@ const Layout = ({ children }) => (
     render={data => (
       <React.Fragment>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div className="mx-0 p-0 pt-header bg-grey">
-        {children}
-        </div>
+        <div className="mx-0 p-0 pt-header bg-grey">{children}</div>
         <footer className="p-0 w-full bg-white h-48">
-          <div className="w-screen max-w-xl mx-auto px-2">© {new Date().getFullYear()}WeMe Project</div>
+          <div className="w-screen max-w-xl mx-auto px-2">
+            © {new Date().getFullYear()}WeMe Project
+          </div>
         </footer>
       </React.Fragment>
     )}
