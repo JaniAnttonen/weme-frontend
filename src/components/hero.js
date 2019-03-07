@@ -13,7 +13,7 @@ const Hero = () => (
     <div className="container relative max-w-xl mx-auto flex flex-row justify-between items-center text-white">
       <div className="container md:w-1/2">
         <h1 className="my-4 font-heading">
-          Accessing social isolation in elders together
+          Assessing social isolation in elders together
         </h1>
         <p className="my-4">
           WeMe project is a platform to attract social attention to the social
