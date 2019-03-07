@@ -402,6 +402,7 @@ module.exports = {
     sm: '.125rem',
     default: '.35rem',
     lg: '1rem',
+    input: '3px',
     full: '9999px',
   },
 
@@ -731,7 +732,7 @@ module.exports = {
     default: '0 2px 4px 0 rgba(0,0,0,0.10)',
     md: '0 4px 8px 0 rgba(0,0,0,0.05), 0 2px 4px 0 rgba(0,0,0,0.02)',
     lg: '0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08)',
-    inner: 'inset 0 2px 4px 0 rgba(0,0,0,0.06)',
+    inner: 'inset 0px 1px 3px rgba(0, 0, 0, 0.5)',
     outline: '0 0 0 3px rgba(52,144,220,0.5)',
     none: 'none',
   },

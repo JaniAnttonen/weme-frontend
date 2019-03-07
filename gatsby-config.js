@@ -27,7 +27,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/assets/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/assets/images/logo-small.png`,
       },
     },
     `gatsby-plugin-postcss`,
@@ -35,10 +35,10 @@ module.exports = {
       resolve: 'gatsby-plugin-purgecss',
       options: {
         tailwind: true,
-        purgeOnly: ['src/assets/css/style.css'], // Purge only tailwind
+        purgeOnly: ['src/assets/css/style.css'],
+        whitelist: ["bg-green", "bg-orange", "bg-red", "bg-red-dark", "bg-red-light", "bg-blue-light", "bg-yellow-light", "bg-orange-light"],
       },
     },
-    `gatsby-plugin-sass`,
     `gatsby-plugin-offline`,
   ],
 }

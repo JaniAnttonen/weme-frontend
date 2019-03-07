@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'Avenir-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('AvenirNext'),
+    url('../fonts/AvenirNextLTPro-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Avenir-SemiBold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('AvenirNext'),
+    url('../fonts/AvenirNextLTPro-Demi.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Avenir-Bold';
+  font-style: bold;
+  font-weight: bold;
+  src: local('AvenirNext'),
+    url('../fonts/AvenirNextLTPro-Bold.otf') format('opentype');
+}
+
+.header {
+  height: 50px;
+}
+
+.header .logo {
+  height: 35px;
+  width: auto;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+a {
+  transition: 0.1s background ease-in-out, 0.1s border-color ease-in-out,
+    0.1s color ease-in-out;
+}
+
+p {
+  line-height: 1.5em;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.hero h1 {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 2.5rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.cardImg {
+  height: 90px;
+  width: auto;
+  margin-top: 18px;
+}
+
+input {
+  height: 36px;
+}

@@ -8,7 +8,7 @@ const Join = () => (
   <Layout>
     <SEO title="Sign In" keywords={[`weme`, `Join`]} />
     <Main className="py-8">
-      <h1>Join!</h1>
+      <h1 className="font-heading mx-auto">Join!</h1>
     </Main>
   </Layout>
 )
