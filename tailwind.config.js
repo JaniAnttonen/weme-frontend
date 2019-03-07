@@ -40,6 +40,7 @@ let colors = {
   transparent: 'transparent',
   black: '#22292f',
   grey: '#f2f2f2',
+  'grey-dark': '#979797',
   white: '#ffffff',
   'red-darkest': '#3b0d0c',
   'red-darker': '#621b18',

@@ -14,21 +14,21 @@ const Login = () => (
         <div className="flex flex-col items-center md:w-1/3 sm:w-1/2 mt-10">
           <input
             type="text"
-            className="mb-4 p-3 shadow-inner rounded-input w-full"
+            className="mb-4 p-2 shadow-inner rounded-input w-full border border-grey-dark"
             placeholder="Username*"
           />
           <input
             type="text"
-            className="mb-4 p-3 shadow-inner rounded-input w-full"
+            className="mb-4 p-2 shadow-inner rounded-input w-full border border-grey-dark"
             placeholder="Password*"
           />
           <a>Forgot password?</a>
-            <button
-              className="bg-teal hover:bg-green hover:border-green text-white py-2 px-10 border border-teal rounded no-underline mt-10 mb-2 shadow"
-            >
-              Login
-            </button>
-            <div>Do not have an account? Please, <Link to="/app/join">sign up</Link></div>
+          <button className="bg-teal hover:bg-green hover:border-green text-white py-2 px-10 border border-teal rounded no-underline mt-10 mb-2 shadow">
+            Login
+          </button>
+          <div>
+            Do not have an account? Please, <Link to="/app/join">sign up</Link>
+          </div>
         </div>
       </div>
     </Main>
