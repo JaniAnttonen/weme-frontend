@@ -4,13 +4,13 @@ import heroBg from '../assets/images/hero.jpg'
 
 const Hero = () => (
   <div
-    className="hero m-0 w-full h-screen min-h-hero md:max-h-60vh sd:max-h-full flex flex-col bg-cover justify-center items-center py-8 px-2"
+    className="hero m-0 w-full h-screen min-h-hero md:max-h-60vh sd:max-h-full flex flex-col bg-cover justify-center items-center py-8"
     style={{
       backgroundImage: `url("${heroBg}")`,
       backgroundPosition: 'top center',
     }}
   >
-    <div className="container relative max-w-xl mx-auto flex flex-row justify-between items-center text-white">
+    <div className="container relative max-w-xl mx-auto px-2 flex flex-row justify-between items-center text-white">
       <div className="container md:w-1/2">
         <h1 className="my-4 font-heading">
           Assessing social isolation in elders together
