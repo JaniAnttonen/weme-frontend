@@ -27,7 +27,7 @@ const IndexPage = () => (
           Finland and China by proving a modular system.
         </p>
       </BigCard>
-      <BigCard color="green" icon={calendarImg}>
+      <BigCard color="green" icon={calendarImg} right>
         <h2 className="font-heading">Personal calendar and events</h2>
         <p>
           We aim to improve the elders living quality and social satisfaction in
@@ -41,7 +41,7 @@ const IndexPage = () => (
           Finland and China by proving a modular system.
         </p>
       </BigCard>
-      <BigCard color="red-dark">
+      <BigCard color="red-dark" right>
         <h2 className="font-heading">
           What is social isolation? What about loneliness?
         </h2>
@@ -61,7 +61,7 @@ const IndexPage = () => (
       <SmallCard color="yellow-light">
         <h2 className="font-heading">THE PLAN</h2>
       </SmallCard>
-      <SmallCard color="orange-light">
+      <SmallCard color="orange-light" right>
         <h2 className="font-heading">THE HEAD</h2>
       </SmallCard>
     </Main>
