@@ -31,9 +31,8 @@ const SignUp = () => {
               value={state.password}
               onChange={e => setState({ ...state, password: e.target.value })}
             />
-            <a>Forgot password?</a>
             <button
-              className="bg-teal hover:bg-green hover:border-green text-white py-2 px-10 border border-teal rounded no-underline mt-10 mb-2 shadow"
+              className="bg-teal hover:bg-green hover:border-green text-white py-2 px-10 border border-teal rounded no-underline mt-3 mb-2 shadow"
               onClick={() => onSubmit()}
             >
               Sign up
