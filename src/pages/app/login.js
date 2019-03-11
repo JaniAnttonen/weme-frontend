@@ -9,7 +9,7 @@ import Main from '../../components/main'
 
 const Login = () => {
   const [state, setState] = useState({ username: '', password: '' })
-  const onSubmit = () => api.fetchGoogle().then(console.log)
+  const onSubmit = () => api.login(state).then(console.log)
   return (
     <Layout>
       <SEO title="Sign In" keywords={[`weme`, `login`]} />
@@ -22,14 +22,14 @@ const Login = () => {
               className="mb-4 p-2 shadow-inner rounded-input w-full border border-grey-dark"
               placeholder="Username*"
               value={state.username}
-              onChange={e => setState({ username: e.target.value })}
+              onChange={e => setState({ ...state, username: e.target.value })}
             />
             <input
               type="text"
               className="mb-4 p-2 shadow-inner rounded-input w-full border border-grey-dark"
               placeholder="Password*"
               value={state.password}
-              onChange={e => setState({ password: e.target.value })}
+              onChange={e => setState({ ...state, password: e.target.value })}
             />
             <a>Forgot password?</a>
             <button
