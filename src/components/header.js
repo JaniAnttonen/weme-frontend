@@ -25,16 +25,16 @@ const Header = ({ siteTitle }) => (
       <div id="nav" className="hidden md:flex md:items-center w-full md:w-auto">
         <div className="text-sm">
           <Link
-            to="/app/login"
+            to="/app/signin"
             className="bg-teal hover:bg-green hover:border-green text-white py-2 px-10 mr-4 border border-teal rounded no-underline"
           >
             Sign in
           </Link>
           <Link
-            to="/app/join"
+            to="/app/signup"
             className="bg-transparent hover:border-green hover:bg-green hover:text-white py-2 px-10 border border-teal rounded text-teal no-underline"
           >
-            Join
+            Sign up
           </Link>
         </div>
       </div>

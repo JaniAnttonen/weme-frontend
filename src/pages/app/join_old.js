@@ -93,7 +93,7 @@ const Join = () => (
             Create an account
           </button>
           <div>
-            Have an account? Please <Link to="/app/login">sign in</Link>
+            Have an account? Please <Link to="/app/signin">sign in</Link>
           </div>
         </div>
       </div>

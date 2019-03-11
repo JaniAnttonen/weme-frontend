@@ -26,13 +26,13 @@ const Hero = () => (
         </p>
         <div className="flex flex-row flex-wrap mt-8">
           <Link
-            to="/app/join"
+            to="/app/signup"
             className="bg-transparent hover:bg-teal text-white font-semibold hover:text-white py-3 px-5 mr-4 border border-white hover:border-transparent rounded no-underline"
           >
             Become a user
           </Link>
           <Link
-            to="/app/login"
+            to="/app/signup"
             className="bg-transparent hover:bg-teal text-white font-semibold hover:text-white py-3 px-5 border border-white hover:border-transparent rounded no-underline"
           >
             Become a partner

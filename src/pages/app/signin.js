@@ -7,12 +7,12 @@ import Layout from '../../components/layout'
 import SEO from '../../components/seo'
 import Main from '../../components/main'
 
-const Login = () => {
-  const [state, setState] = useState({ username: '', password: '' })
-  const onSubmit = () => api.login(state).then(console.log)
+const SignIn = () => {
+  const [state, setState] = useState({ email: '', password: '' })
+  const onSubmit = () => api.signIn(state).then(console.log)
   return (
     <Layout>
-      <SEO title="Sign In" keywords={[`weme`, `login`]} />
+      <SEO title="Sign In" keywords={[`weme`, `SignIn`]} />
       <Main className="py-10">
         <div className="container flex flex-col items-center justify-center">
           <h1 className="font-heading">Sign in</h1>
@@ -20,12 +20,12 @@ const Login = () => {
             <input
               type="text"
               className="mb-4 p-2 shadow-inner rounded-input w-full border border-grey-dark"
-              placeholder="Username*"
-              value={state.username}
-              onChange={e => setState({ ...state, username: e.target.value })}
+              placeholder="Email*"
+              value={state.email}
+              onChange={e => setState({ ...state, email: e.target.value })}
             />
             <input
-              type="text"
+              type="password"
               className="mb-4 p-2 shadow-inner rounded-input w-full border border-grey-dark"
               placeholder="Password*"
               value={state.password}
@@ -36,11 +36,11 @@ const Login = () => {
               className="bg-teal hover:bg-green hover:border-green text-white py-2 px-10 border border-teal rounded no-underline mt-10 mb-2 shadow"
               onClick={() => onSubmit()}
             >
-              Login
+              Sign in
             </button>
             <div>
               Do not have an account? Please,{' '}
-              <Link to="/app/join">sign up</Link>
+              <Link to="/app/signup">sign up</Link>
             </div>
           </div>
         </div>
@@ -49,4 +49,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default SignIn
