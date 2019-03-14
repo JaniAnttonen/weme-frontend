@@ -1,13 +1,19 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
+const Wrapper = props => props.to ? <Link
+className={props.classNames}
+to={props.to}
+>{props.children}</Link> : <div className={props.classNames}>{props.children}</div>
+
 export const BigCard = props => {
-  const { color, icon, right, children } = props
+  const { color, icon, right, link, children } = props
   return (
-    <div
-      className={`card container relative max-w-full md:w-1/3 sd:w-full mb-8 flex-no-shrink flex-grow bg-white shadow rounded min-h-card${
+    <Wrapper
+      classNames={`card container relative max-w-full md:w-1/3 sd:w-full mb-8 flex-no-shrink flex-grow bg-white shadow rounded min-h-card${
         !right ? ' mr-8' : ''
       }`}
+      to={link}
     >
       <div
         className={`bg-${
@@ -22,17 +28,20 @@ export const BigCard = props => {
           {children}
         </div>
       </div>
-    </div>
+    </Wrapper>
   )
 }
 
 export const SmallCard = props => {
-  const { color, icon, right, children } = props
+  const { color, icon, right, wide, link, children } = props
   return (
-    <div
-      className={`card container relative max-w-1/2 md:w-1/5 sd:w-1/2 mb-8 flex flex-no-shrink flex-grow bg-white shadow rounded min-h-48${
+    <Wrapper
+      classNames={`card container relative ${
+        wide ? 'max-w-full md:w-1/3 sd:w-1/2 min-w-1/2' : 'max-w-full md:max-w-1/4 md:w-1/5 sd:w-1/2 min-w-1/5'
+      } mb-8 flex flex-no-shrink flex-grow bg-white shadow rounded min-h-56${
         !right ? ' mr-8' : ''
       }`}
+      to={link}
     >
       <div
         className={`bg-${
@@ -47,6 +56,6 @@ export const SmallCard = props => {
           {icon && <img src={icon} className="cardImg" alt="small card icon" />}
         </div>
       </div>
-    </div>
+    </Wrapper>
   )
 }

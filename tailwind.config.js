@@ -493,6 +493,7 @@ module.exports = {
     '24': '6rem',
     '32': '8rem',
     '48': '12rem',
+    '56': '14rem',
     '64': '16rem',
     full: '100%',
     screen: '100vh',
@@ -548,6 +549,7 @@ module.exports = {
     '24': '6rem',
     '32': '8rem',
     '48': '12rem',
+    '56': '14rem',
     '64': '16rem',
     '128': '32rem',
     hero: '400px',
@@ -573,6 +575,8 @@ module.exports = {
   */
 
   maxWidth: {
+    "1/2": "50%",
+    "1/4": "25%",
     xs: '20rem',
     sm: '30rem',
     md: '40rem',
